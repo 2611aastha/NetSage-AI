@@ -1,0 +1,68 @@
+case_id,symptom,topology_note,show_outputs,expected_fault,osi_layer,concept,severity
+NS-001,PC-01 cannot obtain IP address from DHCP pool.,PC-01 on Switch SW1 Port Fa0/2; Router R1 running DHCP service.,"SW1# show interfaces fa0/2 switchport
+Access Mode VLAN: 10
+R1# show ip dhcp binding
+(No bindings active)",DHCP Relay helper address missing on VLAN 10 interface,Layer 3,DHCP,High
+NS-002,Sales-PC ping to WebServer fails continuously.,Sales-PC connected to Fa0/6 on SW1.,"SW1# show interfaces fa0/6 switchport
+Name: Fa0/6
+Access Mode VLAN: 20 (Marketing)",Access VLAN mismatch on endpoint switchport,Layer 2,VLAN / Trunking,High
+NS-003,Branch router cannot reach external gateway subnets.,Branch-R1 connected to ISP-Edge via Gi0/0.,"Branch-R1# show ip route
+Gateway of last resort is not set",Missing default route to ISP next-hop,Layer 3,Static Routing,Critical
+NS-004,Host NS-HOST-4 unreachable across local boundary.,Topology segment 4 linked to SW-Core.,"SW-Core# show running-config interface fa0/4
+FastEthernet0/4 is administratively down, line protocol is down",Interface administratively disabled,Layer 3,NAT,Critical
+NS-005,Host NS-HOST-5 unreachable across local boundary.,Topology segment 5 linked to SW-Core.,"SW-Core# show ip route
+Gateway of last resort is not set",Missing default route entry,Layer 4,DNS,High
+NS-006,Host NS-HOST-6 unreachable across local boundary.,Topology segment 6 linked to SW-Core.,"SW-Core# show ip route
+Gateway of last resort is not set",Missing default route entry,Layer 2,VLAN / Trunking,Medium
+NS-007,Host NS-HOST-7 unreachable across local boundary.,Topology segment 7 linked to SW-Core.,"SW-Core# show ip route
+Gateway of last resort is not set",Missing default route entry,Layer 3,DHCP,Low
+NS-008,Host NS-HOST-8 unreachable across local boundary.,Topology segment 8 linked to SW-Core.,"SW-Core# show running-config interface fa0/8
+FastEthernet0/8 is administratively down, line protocol is down",Interface administratively disabled,Layer 4,Static Routing,Critical
+NS-009,Host NS-HOST-9 unreachable across local boundary.,Topology segment 9 linked to SW-Core.,"SW-Core# show ip route
+Gateway of last resort is not set",Missing default route entry,Layer 2,ACL,High
+NS-010,Host NS-HOST-10 unreachable across local boundary.,Topology segment 10 linked to SW-Core.,"SW-Core# show ip route
+Gateway of last resort is not set",Missing default route entry,Layer 3,NAT,Medium
+NS-011,Host NS-HOST-11 unreachable across local boundary.,Topology segment 11 linked to SW-Core.,"SW-Core# show ip route
+Gateway of last resort is not set",Missing default route entry,Layer 4,DNS,Low
+NS-012,Host NS-HOST-12 unreachable across local boundary.,Topology segment 12 linked to SW-Core.,"SW-Core# show running-config interface fa0/12
+FastEthernet0/12 is administratively down, line protocol is down",Interface administratively disabled,Layer 2,VLAN / Trunking,Critical
+NS-013,Host NS-HOST-13 unreachable across local boundary.,Topology segment 13 linked to SW-Core.,"SW-Core# show ip route
+Gateway of last resort is not set",Missing default route entry,Layer 3,DHCP,High
+NS-014,Host NS-HOST-14 unreachable across local boundary.,Topology segment 14 linked to SW-Core.,"SW-Core# show ip route
+Gateway of last resort is not set",Missing default route entry,Layer 4,Static Routing,Medium
+NS-015,Host NS-HOST-15 unreachable across local boundary.,Topology segment 15 linked to SW-Core.,"SW-Core# show ip route
+Gateway of last resort is not set",Missing default route entry,Layer 2,ACL,Low
+NS-016,Host NS-HOST-16 unreachable across local boundary.,Topology segment 16 linked to SW-Core.,"SW-Core# show running-config interface fa0/16
+FastEthernet0/16 is administratively down, line protocol is down",Interface administratively disabled,Layer 3,NAT,Critical
+NS-017,Host NS-HOST-17 unreachable across local boundary.,Topology segment 17 linked to SW-Core.,"SW-Core# show ip route
+Gateway of last resort is not set",Missing default route entry,Layer 4,DNS,High
+NS-018,Host NS-HOST-18 unreachable across local boundary.,Topology segment 18 linked to SW-Core.,"SW-Core# show ip route
+Gateway of last resort is not set",Missing default route entry,Layer 2,VLAN / Trunking,Medium
+NS-019,Host NS-HOST-19 unreachable across local boundary.,Topology segment 19 linked to SW-Core.,"SW-Core# show ip route
+Gateway of last resort is not set",Missing default route entry,Layer 3,DHCP,Low
+NS-020,Host NS-HOST-20 unreachable across local boundary.,Topology segment 20 linked to SW-Core.,"SW-Core# show running-config interface fa0/20
+FastEthernet0/20 is administratively down, line protocol is down",Interface administratively disabled,Layer 4,Static Routing,Critical
+NS-021,Host NS-HOST-21 unreachable across local boundary.,Topology segment 21 linked to SW-Core.,"SW-Core# show ip route
+Gateway of last resort is not set",Missing default route entry,Layer 2,ACL,High
+NS-022,Host NS-HOST-22 unreachable across local boundary.,Topology segment 22 linked to SW-Core.,"SW-Core# show ip route
+Gateway of last resort is not set",Missing default route entry,Layer 3,NAT,Medium
+NS-023,Host NS-HOST-23 unreachable across local boundary.,Topology segment 23 linked to SW-Core.,"SW-Core# show ip route
+Gateway of last resort is not set",Missing default route entry,Layer 4,DNS,Low
+NS-024,Host NS-HOST-24 unreachable across local boundary.,Topology segment 24 linked to SW-Core.,"SW-Core# show running-config interface fa0/24
+FastEthernet0/24 is administratively down, line protocol is down",Interface administratively disabled,Layer 2,VLAN / Trunking,Critical
+NS-025,Host NS-HOST-25 unreachable across local boundary.,Topology segment 25 linked to SW-Core.,"SW-Core# show ip route
+Gateway of last resort is not set",Missing default route entry,Layer 3,DHCP,High
+NS-026,Host NS-HOST-26 unreachable across local boundary.,Topology segment 26 linked to SW-Core.,"SW-Core# show ip route
+Gateway of last resort is not set",Missing default route entry,Layer 4,Static Routing,Medium
+NS-027,Host NS-HOST-27 unreachable across local boundary.,Topology segment 27 linked to SW-Core.,"SW-Core# show ip route
+Gateway of last resort is not set",Missing default route entry,Layer 2,ACL,Low
+NS-028,Host NS-HOST-28 unreachable across local boundary.,Topology segment 28 linked to SW-Core.,"SW-Core# show running-config interface fa0/28
+FastEthernet0/28 is administratively down, line protocol is down",Interface administratively disabled,Layer 3,NAT,Critical
+NS-029,Host NS-HOST-29 unreachable across local boundary.,Topology segment 29 linked to SW-Core.,"SW-Core# show ip route
+Gateway of last resort is not set",Missing default route entry,Layer 4,DNS,High
+NS-030,Host NS-HOST-30 unreachable across local boundary.,Topology segment 30 linked to SW-Core.,"SW-Core# show ip route
+Gateway of last resort is not set",Missing default route entry,Layer 2,VLAN / Trunking,Medium
+NS-031,Host NS-HOST-31 unreachable across local boundary.,Topology segment 31 linked to SW-Core.,"SW-Core# show ip route
+Gateway of last resort is not set",Missing default route entry,Layer 3,DHCP,Low
+NS-032,Host NS-HOST-32 unreachable across local boundary.,Topology segment 32 linked to SW-Core.,"SW-Core# show running-config interface fa0/32
+FastEthernet0/32 is administratively down, line protocol is down",Interface administratively disabled,Layer 4,Static Routing,Critical

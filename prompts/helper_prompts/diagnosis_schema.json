@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DiagnosisOutput",
+  "type": "object",
+  "properties": {
+    "root_cause": { "type": "string" },
+    "confidence": { "type": "integer", "minimum": 0, "maximum": 100 },
+    "confidence_level": { "type": "string", "enum": ["low", "medium", "high"] },
+    "evidence": { "type": "array", "items": { "type": "string" } },
+    "next_command": { "type": "string" },
+    "fix_steps": { "type": "array", "items": { "type": "string" } },
+    "osi_layer": { "type": "string" },
+    "concept": { "type": "string" },
+    "alternative_hypotheses": { "type": "array", "items": { "type": "string" } },
+    "human_review_required": { "type": "boolean", "const": true }
+  },
+  "required": [
+    "root_cause",
+    "confidence",
+    "confidence_level",
+    "evidence",
+    "next_command",
+    "fix_steps",
+    "osi_layer",
+    "concept",
+    "alternative_hypotheses",
+    "human_review_required"
+  ]
+}

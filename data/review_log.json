@@ -1,0 +1,68 @@
+[
+  {
+    "case_id": "NS-027",
+    "decision": "ACCEPTED",
+    "notes": "Operator selected ACCEPTED on case NS-027",
+    "timestamp": "2026-08-30T15:52:07.341294"
+  },
+  {
+    "case_id": "NS-001",
+    "decision": "ACCEPTED",
+    "notes": "Operator selected ACCEPTED on case NS-001",
+    "timestamp": "2026-08-30T16:08:40.248235"
+  },
+  {
+    "case_id": "NS-032",
+    "decision": "ACCEPTED",
+    "notes": "Operator selected ACCEPTED on case NS-032",
+    "timestamp": "2026-08-30T16:09:38.191546"
+  },
+  {
+    "case_id": "NS-001",
+    "decision": "ACCEPTED",
+    "notes": "Operator selected ACCEPTED on case NS-001",
+    "timestamp": "2026-08-30T16:19:16.923237"
+  },
+  {
+    "case_id": "NS-032",
+    "decision": "ACCEPTED",
+    "notes": "Operator selected ACCEPTED on case NS-032",
+    "timestamp": "2026-08-30T16:20:06.517042"
+  },
+  {
+    "case_id": "NS-001",
+    "decision": "ACCEPTED",
+    "notes": "Operator selected ACCEPTED on case NS-001",
+    "timestamp": "2026-08-30T16:29:28.310683"
+  },
+  {
+    "case_id": "NS-001",
+    "decision": "ACCEPTED",
+    "notes": "Operator selected ACCEPTED on case NS-001",
+    "timestamp": "2026-08-30T16:32:11.440318"
+  },
+  {
+    "case_id": "NS-032",
+    "decision": "ACCEPTED",
+    "notes": "Operator selected ACCEPTED on case NS-032",
+    "timestamp": "2026-08-30T16:33:46.446199"
+  },
+  {
+    "case_id": "NS-001",
+    "decision": "ACCEPTED",
+    "notes": "Operator selected ACCEPTED on case NS-001",
+    "timestamp": "2026-08-30T16:37:22.052651"
+  },
+  {
+    "case_id": "NS-001",
+    "decision": "ACCEPTED",
+    "notes": "Operator selected ACCEPTED on case NS-001",
+    "timestamp": "2026-08-30T16:42:16.413766"
+  },
+  {
+    "case_id": "NS-032",
+    "decision": "ACCEPTED",
+    "notes": "Operator selected ACCEPTED on case NS-032",
+    "timestamp": "2026-08-30T16:43:40.507694"
+  }
+]
